@@ -25,15 +25,17 @@
         </dependency>
 
 <!--        server and jms server for local devlopment for our test not for production-->
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>artemis-server</artifactId>
-        </dependency>
+<!--        use these dependancies when we need to run amq locallt and they will create a locall amq -->
+<!--        but only for testing , if you need to migrate to production just set the username and password for production-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.activemq</groupId>-->
+<!--            <artifactId>artemis-server</artifactId>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>artemis-jms-server</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.activemq</groupId>-->
+<!--            <artifactId>artemis-jms-server</artifactId>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
