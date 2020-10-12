@@ -45,7 +45,9 @@ public class HelloMessageListener {
                 .message("Listener Recive and Sent"  + new Date(System.currentTimeMillis()))
                 .build();
 
-        jmsTemplate.convertAndSend((Destination) message.getJMSReplyTo(), messageToSerialize);
+//        both of these will work :
+//        jmsTemplate.convertAndSend((Destination) message.getJMSReplyTo(), messageToSerialize);
+        jmsTemplate.convertAndSend(message.getJMSReplyTo(), messageToSerialize);
     }
 
 
